@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">bio</string>
+    <string name="person_name">Aashish Khatiwada</string>
+    <string name="bio">
+        hello, i am <b> Aashish Khatiwada</b>\n\n
+        I am a <u>visually impaired</u> guy from <u>nepal</u> \n willing to learn <i>android app development</i> so that i can become a proffessional <b>android app developer</b> in the future. \n
+        For this journey, i am following a <b>Udemi</b> course which has been prepared for 2021 by <i>Polo</i>
+    </string>
+    <string name="hobbeys_hint">enter your hobbeys</string>
+    <string name="button_done">done</string>
+    <string name="content_description">android robot image</string>
+    <string name="autofill_hints">programming</string>
+</resources>

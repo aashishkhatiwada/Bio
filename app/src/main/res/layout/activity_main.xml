@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="bio"
+            type="com.dummies.bio.data.Bio" />
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/content_description"
+        tools:src="@tools:sample/avatars"
+        />
+
+    <TextView
+        android:id="@+id/person_name"
+        style="@style/name_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@{bio.name}" />
+<EditText
+    android:id="@+id/enter_hobbeys"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    style="@style/TextAppearance.AppCompat.Headline"
+    android:hint="@string/hobbeys_hint"
+    android:autofillHints="@string/autofill_hints" />
+    <Button
+        android:id="@+id/button_add_hobbeys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/button_done"/>
+    <TextView
+        android:id="@+id/hobbeys"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:text="@{bio.hobbeys"
+        style="@style/MaterialAlertDialog.MaterialComponents.Title.Text"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        style="@style/name_style"
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/bios_margin"
+            android:fontFamily="@font/roboto_thin"
+            android:lineSpacingMultiplier="1.4"
+            android:padding="@dimen/bios_padding"
+            android:text="@string/bio"
+            android:textColor="@color/white" />
+
+    </ScrollView>
+
+</LinearLayout>
+</layout>
